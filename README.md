@@ -10,9 +10,9 @@ The Pynq-Z2 board is not only capable of running verilog code on its FPGA, it al
 
 ### How it works
 
-When we want to boot the Ubuntu image, we first need to change the bootpin to indicate that we want to boot from the inserted SD card. When the OS has booted, it exposes a tty over USB and a website to run Jupyter notebooks. The latter is the method we use to controll the Pynq board, while the former is handy for debugging the boot process of the OS.
+When we want to start the Ubuntu image, we first need to change the bootpin to indicate that we want to boot from the inserted SD card. When the OS has booted, it exposes a tty over USB and a website to run Jupyter notebooks. The latter is the method we use to controll the Pynq board, while the former is handy for debugging the boot process of the OS.
 
-Using the libraries provided by Xilinx, we can controll a set of GPIO pins integrated we can interface with the FPGA. On the verilog side of things, life is made easy again because there is IP which handles the interface with the SOC. This gives us an IO bus which we can just treat as external inputs.
+Using the libraries provided by Xilinx, we can controll a set of GPIO pins integrated in the SOC with which we can easelly interface with the FPGA. On the verilog side of things, life is made easy again because there is IP which handles the interface with the SOC. This IP gives us an IO bus which we can just treat as external inputs.
 
 ### What does it do
 

@@ -115,6 +115,7 @@ def reset():
   iRst.write(1)
   sleep(0.1)
   iRst.write(0)
+  sleep(5)
 
 def bgBlack():
   '''
