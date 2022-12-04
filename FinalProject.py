@@ -3,7 +3,7 @@ from pynq import GPIO
 from time import sleep
 
 # Writing the bitstream to the FPGA
-ps_pgio_design = Overlay("./design_1_wrapper.bit")
+ps_pgio_design = Overlay("./VGA_signal_wrapper.bit")
 
 # Initialising the GPIO pins assigned in the blockdesign
 iPush = GPIO(GPIO.get_gpio_pin(0), 'out')
@@ -42,6 +42,7 @@ tBlue3 = GPIO(GPIO.get_gpio_pin(26), 'out')
 bgMux = GPIO(GPIO.get_gpio_pin(27), 'out')
 tMux = GPIO(GPIO.get_gpio_pin(28), 'out')
 
+waitTime = 0.000001
 
 def allOne(number):
   '''
@@ -51,12 +52,12 @@ def allOne(number):
   for cell in range(600):
     for x in range(number):
       iPush.write(1)
-      sleep(0.01)
+      sleep(waitTime)
       iPush.write(0)
-      sleep(0.01)
+      sleep(waitTime)
     # Pressing the iStop button
     iStop.write(1)
-    sleep(0.01)
+    sleep(waitTime)
     iStop.write(0)
   print("End allOne")
 
@@ -68,12 +69,12 @@ def countUp():
   for cell in range(600):
     for x in range(cell%16):
       iPush.write(1)
-      sleep(0.01)
+      sleep(waitTime)
       iPush.write(0)
-      sleep(0.01)
+      sleep(waitTime)
     # Pressing the iStop button
     iStop.write(1)
-    sleep(0.01)
+    sleep(waitTime)
     iStop.write(0)
   print("End countUp")
 
@@ -85,12 +86,12 @@ def countDown():
   for cell in range(600):
     for x in range(16-cell%16):
       iPush.write(1)
-      sleep(0.01)
+      sleep(waitTime)
       iPush.write(0)
-      sleep(0.01)
+      sleep(waitTime)
     # Pressing the iStop button
     iStop.write(1)
-    sleep(0.01)
+    sleep(waitTime)
     iStop.write(0)
   print("End countDown")
 
@@ -100,18 +101,18 @@ def printOne(number):
   '''
   for x in range(number):
     iPush.write(1)
-    sleep(0.01)
+    sleep(waitTime)
     iPush.write(0)
-    sleep(0.01)
+    sleep(waitTime)
   iStop.write(0)
-  sleep(0.01)
+  sleep(waitTime)
   iStop.write(0)
 
 def reset():
   '''
   This function resets everything
   '''
-  ps_pgio_design = Overlay("./design_1_wrapper.bit")
+  ps_pgio_design = Overlay("./VGA_signal_wrapper.bit")
   iRst.write(1)
   sleep(0.1)
   iRst.write(0)
@@ -193,10 +194,10 @@ def textPink():
   tRed1.write(1)
   tRed2.write(1)
   tRed3.write(1)
-  tGreen0.write(0)
-  tGreen1.write(1)
-  tGreen2.write(0)
-  tGreen3.write(1)
+  tGreen0.write(1)
+  tGreen1.write(0)
+  tGreen2.write(1)
+  tGreen3.write(0)
   tBlue0.write(1)
   tBlue1.write(1)
   tBlue2.write(1)
@@ -237,6 +238,9 @@ def cleanup():
 # This is the start of the automated sequence 
 #==============================================================================
 
+# Hand controll to the GPIO pins
+initSetup()
+
 # Reset everything before we start
 reset()
 
@@ -260,3 +264,6 @@ bgWhite()
 countUp()
 sleep(10)
 reset()
+
+# Cleanup:
+cleanup()
