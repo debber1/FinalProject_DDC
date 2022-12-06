@@ -166,11 +166,14 @@
         <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_colourMux_0_0/VGA_signal_colourMux_0_0.xci">
           <Proxy FileSetName="VGA_signal_colourMux_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_colourMux_0_1/VGA_signal_colourMux_0_1.xci">
+          <Proxy FileSetName="VGA_signal_colourMux_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_VGA_Timings_0_0/VGA_signal_VGA_Timings_0_0.xci">
+          <Proxy FileSetName="VGA_signal_VGA_Timings_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_AsciiCharsMem_0_0/VGA_signal_AsciiCharsMem_0_0.xci">
           <Proxy FileSetName="VGA_signal_AsciiCharsMem_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_ScreenBufferMem_0_0/VGA_signal_ScreenBufferMem_0_0.xci">
-          <Proxy FileSetName="VGA_signal_ScreenBufferMem_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_clk_wiz_0_0/VGA_signal_clk_wiz_0_0.xci">
           <Proxy FileSetName="VGA_signal_clk_wiz_0_0"/>
@@ -178,29 +181,26 @@
         <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_VGA_pattern_0_0/VGA_signal_VGA_pattern_0_0.xci">
           <Proxy FileSetName="VGA_signal_VGA_pattern_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_VGA_Timings_0_0/VGA_signal_VGA_Timings_0_0.xci">
-          <Proxy FileSetName="VGA_signal_VGA_Timings_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_colourMux_0_1/VGA_signal_colourMux_0_1.xci">
-          <Proxy FileSetName="VGA_signal_colourMux_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_num_capture_4bit_0_0/VGA_signal_num_capture_4bit_0_0.xci">
-          <Proxy FileSetName="VGA_signal_num_capture_4bit_0_0"/>
+        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_ScreenBufferMem_0_0/VGA_signal_ScreenBufferMem_0_0.xci">
+          <Proxy FileSetName="VGA_signal_ScreenBufferMem_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_SwitchSelect_0_0/VGA_signal_SwitchSelect_0_0.xci">
           <Proxy FileSetName="VGA_signal_SwitchSelect_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_Debounce_Switch_0_0/VGA_signal_Debounce_Switch_0_0.xci">
-          <Proxy FileSetName="VGA_signal_Debounce_Switch_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_SwitchSelect_0_1/VGA_signal_SwitchSelect_0_1.xci">
-          <Proxy FileSetName="VGA_signal_SwitchSelect_0_1"/>
+        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_SwitchSelect_2_0/VGA_signal_SwitchSelect_2_0.xci">
+          <Proxy FileSetName="VGA_signal_SwitchSelect_2_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_Debounce_Switch_0_1/VGA_signal_Debounce_Switch_0_1.xci">
           <Proxy FileSetName="VGA_signal_Debounce_Switch_0_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_SwitchSelect_2_0/VGA_signal_SwitchSelect_2_0.xci">
-          <Proxy FileSetName="VGA_signal_SwitchSelect_2_0"/>
+        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_Debounce_Switch_0_0/VGA_signal_Debounce_Switch_0_0.xci">
+          <Proxy FileSetName="VGA_signal_Debounce_Switch_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_num_capture_4bit_0_0/VGA_signal_num_capture_4bit_0_0.xci">
+          <Proxy FileSetName="VGA_signal_num_capture_4bit_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_SwitchSelect_0_1/VGA_signal_SwitchSelect_0_1.xci">
+          <Proxy FileSetName="VGA_signal_SwitchSelect_0_1"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/VGA_signal/hdl/VGA_signal_wrapper.v">
@@ -242,6 +242,14 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../lolwat.mem"/>
           <Attr Name="ImportTime" Val="1668454123"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/DDC/FinalProject.mem">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../FinalProject.mem"/>
+          <Attr Name="ImportTime" Val="1670313298"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -325,12 +333,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="VGA_signal_ScreenBufferMem_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/VGA_signal_ScreenBufferMem_0_0">
-      <Config>
-        <Option Name="TopModule" Val="VGA_signal_ScreenBufferMem_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="VGA_signal_processing_system7_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/VGA_signal_processing_system7_0_0">
       <Config>
         <Option Name="TopModule" Val="VGA_signal_processing_system7_0_0"/>
@@ -388,6 +390,12 @@
     <FileSet Name="VGA_signal_num_capture_4bit_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/VGA_signal_num_capture_4bit_0_0">
       <Config>
         <Option Name="TopModule" Val="VGA_signal_num_capture_4bit_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="VGA_signal_ScreenBufferMem_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/VGA_signal_ScreenBufferMem_0_0">
+      <Config>
+        <Option Name="TopModule" Val="VGA_signal_ScreenBufferMem_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -457,7 +465,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="VGA_signal_ScreenBufferMem_0_0_synth_1" Type="Ft3:Synth" SrcSet="VGA_signal_ScreenBufferMem_0_0" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_ScreenBufferMem_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VGA_signal_ScreenBufferMem_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="VGA_signal_processing_system7_0_0_synth_1" Type="Ft3:Synth" SrcSet="VGA_signal_processing_system7_0_0" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_processing_system7_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VGA_signal_processing_system7_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
@@ -467,23 +475,9 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="VGA_signal_processing_system7_0_0_synth_1" Type="Ft3:Synth" SrcSet="VGA_signal_processing_system7_0_0" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_processing_system7_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VGA_signal_processing_system7_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
     <Run Id="VGA_signal_colourMux_0_0_synth_1" Type="Ft3:Synth" SrcSet="VGA_signal_colourMux_0_0" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_colourMux_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VGA_signal_colourMux_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -493,9 +487,7 @@
     </Run>
     <Run Id="VGA_signal_VGA_pattern_0_0_synth_1" Type="Ft3:Synth" SrcSet="VGA_signal_VGA_pattern_0_0" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_VGA_pattern_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VGA_signal_VGA_pattern_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -505,9 +497,7 @@
     </Run>
     <Run Id="VGA_signal_colourMux_0_1_synth_1" Type="Ft3:Synth" SrcSet="VGA_signal_colourMux_0_1" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_colourMux_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VGA_signal_colourMux_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -517,9 +507,7 @@
     </Run>
     <Run Id="VGA_signal_SwitchSelect_0_0_synth_1" Type="Ft3:Synth" SrcSet="VGA_signal_SwitchSelect_0_0" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_SwitchSelect_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VGA_signal_SwitchSelect_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -529,9 +517,7 @@
     </Run>
     <Run Id="VGA_signal_Debounce_Switch_0_0_synth_1" Type="Ft3:Synth" SrcSet="VGA_signal_Debounce_Switch_0_0" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_Debounce_Switch_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VGA_signal_Debounce_Switch_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -541,9 +527,7 @@
     </Run>
     <Run Id="VGA_signal_SwitchSelect_0_1_synth_1" Type="Ft3:Synth" SrcSet="VGA_signal_SwitchSelect_0_1" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_SwitchSelect_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VGA_signal_SwitchSelect_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -553,9 +537,7 @@
     </Run>
     <Run Id="VGA_signal_Debounce_Switch_0_1_synth_1" Type="Ft3:Synth" SrcSet="VGA_signal_Debounce_Switch_0_1" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_Debounce_Switch_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VGA_signal_Debounce_Switch_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -564,6 +546,16 @@
       <RQSFiles/>
     </Run>
     <Run Id="VGA_signal_SwitchSelect_2_0_synth_1" Type="Ft3:Synth" SrcSet="VGA_signal_SwitchSelect_2_0" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_SwitchSelect_2_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VGA_signal_SwitchSelect_2_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="VGA_signal_num_capture_4bit_0_0_synth_1" Type="Ft3:Synth" SrcSet="VGA_signal_num_capture_4bit_0_0" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_num_capture_4bit_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VGA_signal_num_capture_4bit_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -575,7 +567,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="VGA_signal_num_capture_4bit_0_0_synth_1" Type="Ft3:Synth" SrcSet="VGA_signal_num_capture_4bit_0_0" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_num_capture_4bit_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VGA_signal_num_capture_4bit_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="VGA_signal_ScreenBufferMem_0_0_synth_1" Type="Ft3:Synth" SrcSet="VGA_signal_ScreenBufferMem_0_0" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_ScreenBufferMem_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VGA_signal_ScreenBufferMem_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -656,7 +648,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="VGA_signal_ScreenBufferMem_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_ScreenBufferMem_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VGA_signal_ScreenBufferMem_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="VGA_signal_processing_system7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_processing_system7_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VGA_signal_processing_system7_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
@@ -673,30 +665,9 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="VGA_signal_processing_system7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_processing_system7_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VGA_signal_processing_system7_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
     <Run Id="VGA_signal_colourMux_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_colourMux_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VGA_signal_colourMux_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -713,9 +684,7 @@
     </Run>
     <Run Id="VGA_signal_VGA_pattern_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_VGA_pattern_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VGA_signal_VGA_pattern_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -732,9 +701,7 @@
     </Run>
     <Run Id="VGA_signal_colourMux_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_colourMux_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VGA_signal_colourMux_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -751,9 +718,7 @@
     </Run>
     <Run Id="VGA_signal_SwitchSelect_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_SwitchSelect_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VGA_signal_SwitchSelect_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -770,9 +735,7 @@
     </Run>
     <Run Id="VGA_signal_Debounce_Switch_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_Debounce_Switch_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VGA_signal_Debounce_Switch_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -789,9 +752,7 @@
     </Run>
     <Run Id="VGA_signal_SwitchSelect_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_SwitchSelect_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VGA_signal_SwitchSelect_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -808,9 +769,7 @@
     </Run>
     <Run Id="VGA_signal_Debounce_Switch_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_Debounce_Switch_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VGA_signal_Debounce_Switch_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -826,6 +785,23 @@
       <RQSFiles/>
     </Run>
     <Run Id="VGA_signal_SwitchSelect_2_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_SwitchSelect_2_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VGA_signal_SwitchSelect_2_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="VGA_signal_num_capture_4bit_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_num_capture_4bit_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VGA_signal_num_capture_4bit_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>
@@ -844,7 +820,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="VGA_signal_num_capture_4bit_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_num_capture_4bit_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VGA_signal_num_capture_4bit_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="VGA_signal_ScreenBufferMem_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_ScreenBufferMem_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VGA_signal_ScreenBufferMem_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>

@@ -38,7 +38,7 @@ module ScreenBufferMem
   // Initial contents of the memory
   initial
   begin
-    $readmemb("lolwat.mem", rMem);
+    $readmemb("FinalProject.mem", rMem);
   end
   
   // Logic for Port A

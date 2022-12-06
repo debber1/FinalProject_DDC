@@ -32,6 +32,7 @@ module num_capture_4bit(
   localparam sPush    = 3'b010;
   localparam sToggle  = 3'b011;
   localparam sStop    = 3'b100;
+  localparam sWriteOff = 3'b101;
   
   reg[2:0] rFSM_current, wFSM_next;
   reg[3:0] rNumber;
@@ -75,11 +76,13 @@ module num_capture_4bit(
                   wFSM_next <= sToggle;
 
       sStop:    if (iStop == 1)
-                  wFSM_next <= sStop;
+                  wFSM_next <= sWriteOff;
                 else
-                begin
-                  wFSM_next <= sInit;
-                end
+                  wFSM_next <= sWriteOff;
+      sWriteOff: if(iStop == 1)
+                   wFSM_next <= sWriteOff;
+                 else
+                   wFSM_next <= sInit;
       sToggle:  wFSM_next <= sIdle;
       
       default:  wFSM_next <= sInit;
@@ -120,6 +123,11 @@ module num_capture_4bit(
     begin
       rOutput = rNumber;
       rEn = 1;
+    end
+    else if (rFSM_current == sWriteOff)
+    begin
+        rOutput = rNumber;
+        rEn = 0;
     end
     else
       wToggle_next = rToggle_current;
