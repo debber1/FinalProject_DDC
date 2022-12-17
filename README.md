@@ -24,3 +24,4 @@ The exact functions are all present and documented in the `FinalProject.py` file
 * Manipulate the FSM to fill the screen with a countdown
 * Manipulate the FSM to fill the screen with a desired hexadecimal number
 * Reset the system
+* The bitstream also works without the addition of the OS. Everything has been muxed to work with GPIO and physical buttons

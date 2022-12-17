@@ -160,26 +160,11 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_processing_system7_0_0/VGA_signal_processing_system7_0_0.xci">
-          <Proxy FileSetName="VGA_signal_processing_system7_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_colourMux_0_0/VGA_signal_colourMux_0_0.xci">
           <Proxy FileSetName="VGA_signal_colourMux_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_colourMux_0_1/VGA_signal_colourMux_0_1.xci">
-          <Proxy FileSetName="VGA_signal_colourMux_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_VGA_Timings_0_0/VGA_signal_VGA_Timings_0_0.xci">
-          <Proxy FileSetName="VGA_signal_VGA_Timings_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_AsciiCharsMem_0_0/VGA_signal_AsciiCharsMem_0_0.xci">
           <Proxy FileSetName="VGA_signal_AsciiCharsMem_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_clk_wiz_0_0/VGA_signal_clk_wiz_0_0.xci">
-          <Proxy FileSetName="VGA_signal_clk_wiz_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_VGA_pattern_0_0/VGA_signal_VGA_pattern_0_0.xci">
-          <Proxy FileSetName="VGA_signal_VGA_pattern_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_ScreenBufferMem_0_0/VGA_signal_ScreenBufferMem_0_0.xci">
           <Proxy FileSetName="VGA_signal_ScreenBufferMem_0_0"/>
@@ -187,20 +172,35 @@
         <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_SwitchSelect_0_0/VGA_signal_SwitchSelect_0_0.xci">
           <Proxy FileSetName="VGA_signal_SwitchSelect_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_SwitchSelect_2_0/VGA_signal_SwitchSelect_2_0.xci">
-          <Proxy FileSetName="VGA_signal_SwitchSelect_2_0"/>
+        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_SwitchSelect_0_1/VGA_signal_SwitchSelect_0_1.xci">
+          <Proxy FileSetName="VGA_signal_SwitchSelect_0_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_Debounce_Switch_0_1/VGA_signal_Debounce_Switch_0_1.xci">
-          <Proxy FileSetName="VGA_signal_Debounce_Switch_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_Debounce_Switch_0_0/VGA_signal_Debounce_Switch_0_0.xci">
-          <Proxy FileSetName="VGA_signal_Debounce_Switch_0_0"/>
+        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_colourMux_0_1/VGA_signal_colourMux_0_1.xci">
+          <Proxy FileSetName="VGA_signal_colourMux_0_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_num_capture_4bit_0_0/VGA_signal_num_capture_4bit_0_0.xci">
           <Proxy FileSetName="VGA_signal_num_capture_4bit_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_SwitchSelect_0_1/VGA_signal_SwitchSelect_0_1.xci">
-          <Proxy FileSetName="VGA_signal_SwitchSelect_0_1"/>
+        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_Debounce_Switch_0_0/VGA_signal_Debounce_Switch_0_0.xci">
+          <Proxy FileSetName="VGA_signal_Debounce_Switch_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_processing_system7_0_0/VGA_signal_processing_system7_0_0.xci">
+          <Proxy FileSetName="VGA_signal_processing_system7_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_clk_wiz_0_0/VGA_signal_clk_wiz_0_0.xci">
+          <Proxy FileSetName="VGA_signal_clk_wiz_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_VGA_Timings_0_0/VGA_signal_VGA_Timings_0_0.xci">
+          <Proxy FileSetName="VGA_signal_VGA_Timings_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_VGA_pattern_0_0/VGA_signal_VGA_pattern_0_0.xci">
+          <Proxy FileSetName="VGA_signal_VGA_pattern_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_Debounce_Switch_0_1/VGA_signal_Debounce_Switch_0_1.xci">
+          <Proxy FileSetName="VGA_signal_Debounce_Switch_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="VGA_signal.bd" FileRelPathName="ip/VGA_signal_SwitchSelect_2_0/VGA_signal_SwitchSelect_2_0.xci">
+          <Proxy FileSetName="VGA_signal_SwitchSelect_2_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/VGA_signal/hdl/VGA_signal_wrapper.v">
@@ -289,6 +289,16 @@
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../VGA/VGA.srcs/sim_1/new/VGA_Timings_TB.v"/>
           <Attr Name="ImportTime" Val="1666083669"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/new/LED_toggling_FSM_TB.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../FSM/FSM.srcs/sim_1/new/LED_toggling_FSM_TB.v"/>
+          <Attr Name="ImportTime" Val="1669113014"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -557,9 +567,7 @@
     </Run>
     <Run Id="VGA_signal_num_capture_4bit_0_0_synth_1" Type="Ft3:Synth" SrcSet="VGA_signal_num_capture_4bit_0_0" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_num_capture_4bit_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VGA_signal_num_capture_4bit_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -569,9 +577,7 @@
     </Run>
     <Run Id="VGA_signal_ScreenBufferMem_0_0_synth_1" Type="Ft3:Synth" SrcSet="VGA_signal_ScreenBufferMem_0_0" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_ScreenBufferMem_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VGA_signal_ScreenBufferMem_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -803,9 +809,7 @@
     </Run>
     <Run Id="VGA_signal_num_capture_4bit_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_num_capture_4bit_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VGA_signal_num_capture_4bit_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -822,9 +826,7 @@
     </Run>
     <Run Id="VGA_signal_ScreenBufferMem_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="VGA_signal_ScreenBufferMem_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VGA_signal_ScreenBufferMem_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
